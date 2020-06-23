@@ -1,0 +1,44 @@
+.section-padding {
+    padding: 20px 0 20px;
+    @include breakpoint (phone) {
+        padding: 10px 5px 10px;
+    }
+}
+
+.horizontal-line {
+    &:after {
+        display: block;
+        height: 2px;
+        background-color: $color-blue;
+        content: "";
+        width: 70px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+.mr-bottom {
+    margin-bottom: $mr-bottom;
+}
+
+.paragraph {
+    font-family: Arial;
+    line-height: 1.5;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    padding: 15px;
+    @include breakpoint (phone) {
+        margin-bottom: 0;
+        font-size: 1em;
+    }
+}
+
+.text-blue {
+    color: #66a8c0;
+}
+
+.text {
+    @include breakpoint (phone) {
+        font-size: 16px;
+    }
+}
